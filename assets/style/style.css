@@ -99,7 +99,11 @@ header button:focus{
   text-align: center;
   background: url("../images/intro_background.jpg") center no-repeat;
 	background-size: cover;
-  padding: 200px 0 615px;
+}
+
+.intro__inner{
+  position: relative;
+  padding: 200px 0 605px;
 }
 
 .intro__title{
@@ -146,15 +150,14 @@ header button:focus{
 .intro__devices{
    max-width: 945px;
    width: 100%;
-   position: relative;
    margin: 0 auto;
 }
 
 .intro__deivce{
-    display: block;
     padding: 0;
     position: absolute;
-    bottom: -615px;
+    bottom: 0;
+
   }
 
 .intro__deivce img{
@@ -162,16 +165,57 @@ header button:focus{
 }
 
 .intro__device--first{
-    left:-10px;
+    left:100px;
     z-index: 0;
   }
 
 .intro__device--second{
-    left:225px;
+    left:340px;
     z-index: 1;
 }
 
 .intro__device--third{
-  right:-15px;
+  right:90px;
   z-index: 0;
+}
+
+.intro__arrow{
+  position: absolute;
+  bottom: -35px;
+  left:47%;
+  z-index: 1000;
+  width: 68px;
+  height: 68px;
+  cursor: pointer;
+  border:2px solid #dcdcdc;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+.icon {
+  position: absolute;
+  bottom: 15px;
+  left:50%;
+  width: 2px;
+  height: 35px;
+  background-color: #dcdcdc;
+}
+
+.icon::after, .icon::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  top: 28px;
+  background-color: #dcdcdc;
+}
+
+.icon::after {
+  right:-1px;
+  transform: rotate(45deg);
+}
+
+.icon::before {
+  left:-1px;
+  transform: rotate(-45deg);
 }
