@@ -3,7 +3,7 @@ body{
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color:#898989;
+  color:#929292;
 
 }
 
@@ -157,7 +157,6 @@ header button:focus{
     padding: 0;
     position: absolute;
     bottom: 0;
-
   }
 
 .intro__deivce img{
@@ -336,7 +335,7 @@ header button:focus{
   right:80px;
 }
 
-
+/* How does it works */
 .how{
   background-color: #f5fcfd;
   padding: 130px 0;
@@ -406,5 +405,151 @@ header button:focus{
 .how__subtitle{
   color:#333;
   font-weight: 500;
+  font-size: 18px;
   padding: 30px 0;
+}
+
+
+/* Pricing */
+.pricing{
+  padding: 130px 0;
+}
+
+.pricing__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing__plan{
+  width: 33%;
+  margin: 0 15px;
+}
+
+.pricing__title{
+  color:#333;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.pricing__desc{
+  margin: 30px 0;
+}
+
+.pricing__buttons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pricing__button{
+  display: block;
+  width: 165px;
+  height: 50px;
+  background-color: #fff;
+  border:1px solid rgba(15, 123, 255, 1);
+  margin: 0;
+
+  color:rgba(15, 123, 255, 1);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+
+  transition: color .1s linear, background-color .1s linear;
+}
+
+.pricing__button:hover{
+  cursor: pointer;
+  background-color:rgba(15, 123, 255, 1);
+  color:#fff;
+}
+
+.pricing__button:focus{
+  outline: 0;
+}
+
+.pricing__button--active{
+  color: #fff;
+  background-color:rgba(15, 123, 255, 1);
+}
+
+.pricing__button--active:hover{
+  cursor:unset;
+  background-color:rgba(15, 123, 255, 1);
+}
+
+.pricing__button--montly{
+  border-radius: 40px 0 0 40px;
+}
+
+.pricing__button--yearly{
+  border-radius: 0 40px 40px 0;
+}
+
+.plan__item{
+  display: block;
+  width:33%;
+  padding: 40px 0;
+  margin:0 15px;
+  box-shadow: 0 0 68px rgba(165, 165, 165, .25);
+  text-align: center;
+}
+
+.plan__title{
+  font-size: 18px;
+  font-weight: 500;
+  color:#333;
+  position: relative;
+}
+
+.plan__desc{
+  display: block;
+  width:165px;
+  margin: 20px auto 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.plan__desc ul{
+  list-style: none;
+  padding: 0;
+}
+
+.plan__desc li{
+  margin-bottom: 20px;
+}
+
+.plan__price{
+  color:rgba(15, 123, 255, 1);
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.price__dollar{
+  font-size: 16px;
+}
+
+.plan__button{
+  width:100%;
+  height: 50px;
+  background-color: #0f7bff;
+  border:2px solid #0f7bff;
+  border-radius: 30px;
+
+  color:#fff;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: color .1s linear, background-color .1s linear;
+
+}
+
+
+.plan__button:focus{
+outline: 0;
+}
+
+.plan__button:hover{
+background-color: #f5fcfd;
+color:#0063dd;
+cursor: pointer;
 }
