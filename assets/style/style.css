@@ -252,3 +252,86 @@ header button:focus{
   max-width: 300px;
   margin: 0 auto;
 }
+
+/* About */
+.about__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 130px 0;
+}
+
+.about_desc{
+  width:50%;
+  margin: 0 15px;
+}
+
+.about__title{
+  font-weight: 500;
+  font-size: 32px;
+  color:#333;
+}
+
+.about__text{
+  margin: 30px 0;
+}
+
+.about__more{
+  color:#0f7bff;
+}
+
+.about__more a{
+  text-decoration: none;
+  font-weight: 500;
+  color:#0f7bff;
+  margin-right: 5px;
+}
+
+
+.blue__back{
+  display: block;
+  background-color: #0f7bff;
+  width:420px;
+  height:480px;
+  transform: translate(0,70px) rotate(-40deg);
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.blue__back--second{
+  left:unset;
+  right:0;
+}
+
+.about__pic{
+  width: 50%;
+  height: 400px;
+  z-index: 10;
+  display: flex;
+  align-items:center;
+  position: relative;
+}
+
+.about__pic img{
+  display: block;
+  border-radius: 5px;
+}
+
+.pic{
+  position: absolute;
+  box-shadow: 0 0 62px rgba(142, 142, 142, .43);
+  border-radius: 5px;
+}
+
+.pic-1{
+  left:80px;
+}
+
+.pic-2{
+  position: absolute;
+  right:80px;
+}
