@@ -1,0 +1,1 @@
+$('.testimonial__carousel').slick();
