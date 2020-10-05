@@ -6,11 +6,45 @@ body{
   color:#929292;
 }
 
+i{
+  margin-left: 5px;
+}
+
+
+/* Section */
 section{
 max-width: 1170px;
 margin:0 auto;
+padding: 130px 0;
 }
 
+.section__title{
+  max-width: 360px;
+  color:#333;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  margin: 0 auto;
+}
+
+.section__title p{
+  position: relative;
+  z-index: 10;
+}
+
+.title__icon{
+  position:absolute;
+  bottom: -32px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.section__desc{
+  max-width: 750px;
+  width:100%;
+  margin: 0 auto;
+}
 
 /* Header */
 header{
@@ -223,12 +257,12 @@ header button:focus{
 /* Features */
 .features{
   background-color: #f5fcfd;
-  padding: 165px 0;
 }
 
 .features__inner{
   display: flex;
   justify-content: space-between;
+  padding: 165px 0;
 }
 
 .feature{
@@ -253,6 +287,9 @@ header button:focus{
 }
 
 /* About */
+.about__inner{
+  padding:0;
+}
 .about__item{
   display: flex;
   justify-content: space-between;
@@ -276,15 +313,14 @@ header button:focus{
   margin: 30px 0;
 }
 
-.about__more{
+.more{
   color:#0f7bff;
 }
 
-.about__more a{
+.more a{
   text-decoration: none;
   font-weight: 500;
   color:#0f7bff;
-  margin-right: 5px;
 }
 
 
@@ -338,36 +374,7 @@ header button:focus{
 /* How does it works */
 .how{
   background-color: #f5fcfd;
-  padding: 130px 0;
   text-align: center;
-}
-
-.how__title{
-  max-width: 360px;
-  color:#333;
-  font-size: 32px;
-  font-weight: 500;
-  position: relative;
-  margin: 0 auto;
-}
-
-.how__title p{
-  position: relative;
-  z-index: 10;
-}
-
-.title__icon{
-  position:absolute;
-  bottom: -32px;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.how__desc{
-  max-width: 750px;
-  width:100%;
-  margin: 0 auto;
 }
 
 .how__items{
@@ -411,10 +418,6 @@ header button:focus{
 
 
 /* Pricing */
-.pricing{
-  padding: 130px 0;
-}
-
 .pricing__inner{
   display: flex;
   justify-content: space-between;
@@ -602,5 +605,166 @@ cursor: pointer;
   margin-bottom: 25px;
 }
 
-.elem__text{
+
+/* News */
+.news{
+  padding: 130px 0;
+  text-align: center;
+}
+
+.news__inner{
+  margin-top: 45px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.news__inner a{
+  text-decoration: none;
+}
+
+.articles{
+  width:50%;
+  margin:0 15px;
+  text-align: left;
+}
+
+.main__title{
+  font-size: 24px;
+  font-weight: 500;
+  color:#0f7bff;
+  margin:40px 0 20px;
+}
+
+.main__text{
+  margin-bottom: 40px;
+}
+
+.article{
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__desc{
+  margin-left: 30px;
+}
+
+.article__title{
+  margin-bottom: 25px;
+  font-weight:500;
+  font-size:18px;
+  color:#333;
+}
+
+.article__text{
+  color:#929292;
+}
+
+/* Start */
+.start{
+  background-color:#f5fcfd;
+}
+
+.start__inner{
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.start__title{
+  font-weight:500;
+  font-size:32px;
+  color:#333;
+  margin-bottom: 10px;
+}
+
+.start__inner button{
+  width: 250px;
+  height: 70px;
+  background-color: #0f7bff;
+  border:2px solid #0f7bff;
+  border-radius: 5px;
+
+  color:#fff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+
+  transition: color .1s linear, background-color .1s linear;
+}
+
+.start__inner button:hover{
+background-color: #fff;
+color:#0f7bff;
+cursor: pointer;
+}
+
+.start__inner button:focus{
+outline: 0;
+}
+
+
+/* Subscribe */
+.subscribe{
+  background-color: #0f7bff;
+}
+
+.subscribe__inner{
+  max-width: 555px;
+  text-align: center;
+}
+
+.subscribe__logo{
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  color:#fff;
+}
+
+.subscribe__field{
+  display: flex;
+  justify-content: center;
+  height: 55px;
+}
+.subscribe__inner input{
+  max-width: 390px;
+  width: 100%;
+  border:2px solid #fff;
+  background-color: #0f7bff;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  padding-left:30px;
+  color:#fff;
+}
+
+.subscribe__inner input::placeholder{
+    color:#fff;
+}
+
+.subscribe__inner button{
+  border-radius:0 40px 40px 0;
+  max-width: 165px;
+  width:100%;
+
+  background-color: #fff;
+  border:2px solid #fff;
+
+  color:#0f7bff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+
+  transition: color .1s linear, background-color .1s linear;
+}
+
+.subscribe__inner button:hover{
+background-color: #0f7bff;
+color:#fff;
+cursor: pointer;
+}
+
+.start__inner button:focus{
+outline: 0;
 }
