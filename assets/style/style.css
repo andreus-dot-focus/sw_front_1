@@ -765,6 +765,40 @@ color:#fff;
 cursor: pointer;
 }
 
-.start__inner button:focus{
+.subscribe__inner button:focus{
 outline: 0;
+}
+
+
+/* Footer */
+footer{
+  background-color: #0f7bff;
+  border-top: 2px solid #fff;
+}
+
+.footer__inner{
+  padding: 40px 0;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav{
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.footer__nav a{
+  text-decoration: none;
+  color:rgba(255, 255, 255, .7);
+  transition: color linear .1s;
+}
+
+.footer__nav a:hover{
+  color:rgba(255, 255, 255, 1);
+}
+
+.footer__social{
+  width: 82px;
 }
