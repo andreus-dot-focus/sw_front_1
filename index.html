@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="assets/style/style.css" rel="stylesheet">
     <title></title>
@@ -11,16 +12,16 @@
       <div class="header__logo">AppSon</div>
       <div class="header__navigation">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Pages</a>
+          <a href="#" data-scroll="#intro">Home</a>
+          <a href="#" data-scroll="#features">Features</a>
+          <a href="#" data-scroll="#pricing">Pricing</a>
+          <a href="#" data-scroll="#news">Pages</a>
         </nav>
         <button type="button" name="signup" class="signup__button">sign up</button>
       </div>
     </header>
-
-    <div class="intro">
+ <!-- Intro -->
+    <div class="intro" id="intro">
       <section class="intro__inner">
         <div class="intro__title">Best Desktop App for You</div>
         <div class="intro__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -38,14 +39,17 @@
           </div>
         </div>
 
-        <div class="intro__arrow">
-          <div class="icon"></div>
-        </div>
+        <a href="#" data-scroll="#features">
+          <div class="intro__arrow">
+            <div class="icon"></div>
+          </div>
+        </a>
+
       </section>
     </div>
 
 <!-- Features -->
-    <div class="features">
+    <div class="features" id="features">
       <section class="features__inner">
         <div class="feature">
           <img src="assets\images\features\analysis.png" alt="">
@@ -151,7 +155,7 @@
       </div> <!-- /how -->
 
 <!-- Pricing -->
-      <div class="pricing">
+      <div class="pricing" id="pricing">
         <section class="pricing__inner">
           <div class="pricing__plan">
             <div class="pricing__title">Pricing Plan</div>
@@ -196,6 +200,7 @@
         </section>
       </div><!-- /pricing -->
 
+<!-- Testimonial -->
       <div class="testimonial">
         <img src="assets\images\testimonial.png" alt="">
         <div class="testimonial__inner">
@@ -213,7 +218,8 @@
         </div><!-- /testimonial__inner -->
       </div><!-- /testimonial -->
 
-      <div class="news">
+<!-- News -->
+      <div class="news" id="news">
         <div class="section__title">
           <p>Latest News From Us</p>
           <div class="title__icon">
@@ -287,21 +293,24 @@
       </section>
     </div> <!-- /subscribe -->
 
+<!-- Footer -->
     <footer>
       <section class="footer__inner">
         <div class="copyright">© 2018 Copyright, All Rights Reserved by AppSon</div>
         <nav class="footer__nav">
-          <a href="#">Terms & Condition </a>
-          <a href="#">Privacy Policy </a>
-          <a href="#">Help</a>
+          <a href="#" target="_blank">Terms & Condition </a>
+          <a href="#" target="_blank">Privacy Policy </a>
+          <a href="#" target="_blank">Help</a>
         </nav>
         <div class="footer__social footer__nav">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
       </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/e0d27bd877.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets\js\app.js"></script>
   </body>
