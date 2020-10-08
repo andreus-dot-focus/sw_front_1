@@ -4,8 +4,6 @@ $("[data-scroll]").on("click", function(event){
   var $this = $(this),
       blockId = $this.data('scroll'),
       blockOffset = $(blockId).offset().top;
-  // $("#nav a").removeClass("active");
-  // $this.addClass("active");
 
   $("html , body").animate({
     scrollTop:blockOffset
@@ -44,7 +42,7 @@ $(".nav-burger").on("click", function(event){
 
 //Scroll Down
 $(window).on("scroll", function(){
-  if($(this).scrollTop()>=$(window).innerHeight()) {
+  if($(this).scrollTop()+120>=$(window).innerHeight()) {
     $(".scroll__down").removeClass("scroll__down--active");
     $(".scroll__up").addClass("scroll__up--active");
   }
